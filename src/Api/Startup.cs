@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using Service;
 
 namespace Api
 {
@@ -21,6 +22,9 @@ namespace Api
         {
 
             services.AddControllers();
+
+            // Add DI
+            services.AddScoped<ICalculator, Calculator>();
 
             services.AddSwaggerGen(c =>
             {
