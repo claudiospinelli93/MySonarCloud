@@ -10,7 +10,7 @@ ARG SONAR_TOKEN=2bb4d49a3db0293ffe40ea0a305dfb4b8877284c
 # Step 02 # installs tools to use dotnet-sonnarscanner and reportgenerator.
 RUN mkdir -p /usr/share/man/man1
 RUN apk update && apk add openjdk11
-RUN dotnet tool install --global dotnet-sonarscanner --version 5.0.4
+RUN dotnet tool install --global dotnet-sonarscanner --version 5.1.0
 RUN dotnet tool install dotnet-reportgenerator-globaltool --version 4.8.4 --tool-path /tools
 ENV PATH="$PATH:/root/.dotnet/tools"
 
