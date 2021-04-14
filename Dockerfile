@@ -5,7 +5,7 @@ WORKDIR /app
 ARG SONAR_PROJECT_KEY=claudiospinelli93_MySonarCloud
 ARG SONAR_OGRANIZAION_KEY=claudiospinelli93
 ARG SONAR_HOST_URL=https://sonarcloud.io
-ARG SONAR_TOKEN=adf64264f3b4b9abb630798f32f9de61c919b73e
+ARG SONAR_TOKEN=790820aec3f5b4ba4ea6405f93889040659ff3b5
 
 # Step 02 # installs tools to use dotnet-sonnarscanner and reportgenerator.
 RUN mkdir -p /usr/share/man/man1
