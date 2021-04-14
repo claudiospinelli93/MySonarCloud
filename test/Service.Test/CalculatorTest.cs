@@ -28,8 +28,6 @@ namespace Service.Test
 
             // assert
             Assert.Equal(5, result);
-        }
-
-        
+        }        
     }
 }
